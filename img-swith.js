@@ -8,7 +8,7 @@
  *          或者<img-swith><img src="..."><img src="..."><img src="...">...</img-swith>
  * 
  * 
- * fdsafdsafds
+ * 
  * @author zhangkai
  */
 class imgSwith extends HTMLElement {
