@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>img-swith - Web 控件演示</title>
+    <script src="img-swith.js"></script>
+    <style>
+        body>section{display:flex;justify-content: center;align-content: center;}
+        img-swith{width: 1000px;height:800px;}
+    </style>
+</head>
+<body>
+    <header><h1>图片切换 Web 控件演示</h1></header>
+    <section>
+        <img-swith 
+            interval="3" 
+            speed="1" 
+            imgmaxwidth="1000" 
+            imgs="https://cdn.pixabay.com/photo/(
+                2018/10/03/03/42/flower-gerbel-3720383,
+                2018/05/06/17/59/columbine-3379045,
+                2018/09/06/19/53/mushroom-3659165,
+                2018/11/03/22/24/fire-3792951,
+                2018/04/05/23/30/nature-3294543,
+                2017/11/20/20/12/helicopter-2966569,
+                2018/10/30/16/06/water-lily-3784022
+            )_960_720.jpg">
+        </img-swith>
+    </section>
+    <footer></footer>
+</body>
+</html>
