@@ -15,11 +15,11 @@ class imgSwith extends HTMLElement {
     constructor() {
         super();
 
-        let speed = this.hasAttribute("speed") ? +this.getAttribute("speed") : 2;
-        let interval = this.hasAttribute("interval") ? +this.getAttribute("interval") : 3;
+        let speed = this.hasAttribute("speed") && (+this.getAttribute("speed")) ? +this.getAttribute("speed") : 1;
+        let interval = this.hasAttribute("interval") && (+this.getAttribute("interval")) ? +this.getAttribute("interval") : 3;
 
-        let imgMaxWidth = this.hasAttribute("imgmaxwidth") ? +this.getAttribute("imgmaxwidth") : 0;
-        let imgMaxHeight = this.hasAttribute("imgmaxheight") ? +this.getAttribute("imgmaxheight") : 0;
+        let imgMaxWidth = this.hasAttribute("imgmaxwidth") && (+this.getAttribute("imgmaxwidth")) ? +this.getAttribute("imgmaxwidth") : 0;
+        let imgMaxHeight = this.hasAttribute("imgmaxheight") && (+this.getAttribute("imgmaxheight")) ? +this.getAttribute("imgmaxheight") : 0;
         let imgElements = [];
 
         if (this.hasAttribute("imgs")) {
@@ -33,7 +33,7 @@ class imgSwith extends HTMLElement {
             //解析后的地址列表。原本是用 Set，确保列表不会添加重复的项。后来想到可能会有特殊的情况允许重复，就改用数组。比如想让图片按这样的顺序显示：1,0,2,0,3,0,4,0,5,0... ，那么0图片就会重复出现在列表中，如果用 Set 就不行。
             const _urlList = [];
 
-            this.getAttribute("imgs").replace(/\r|\n/ig,"").split("|").forEach(n => { //先按竖线分隔
+            this.getAttribute("imgs").replace(/\r|\n/ig, "").split("|").forEach(n => { //先按竖线分隔
                 n = n.trim();
                 let _urls = n.match(/(.+)\((.+)\)(.+)/i);   //匹配类似 http://www.xxx.com/(1,2,3,4,5).jpg 这样的写法
                 if (_urls) {
@@ -42,7 +42,7 @@ class imgSwith extends HTMLElement {
                     let _urlCenterList = [];       //地址中间部分
                     _urls[2].split(",").forEach(x => {  //将中间部分按逗号分隔遍历
                         x = x.trim();
-                        if(!x){return};
+                        if (!x) { return };
                         let _range = x.match(/(.+)\.\.(.+)/ig);  //匹配类似于 0..100 这样的写法
                         if (_range) {
                             for (let i = (+_range[1] ? +_range[1] : 0); i <= (+_range[2] ? +_range[2] : -1); i++) {
@@ -71,7 +71,7 @@ class imgSwith extends HTMLElement {
         const style = document.createElement("style");
         style.textContent = `
             :host{display:block;}
-            img{${imgMaxWidth?"max-width:"+imgMaxWidth+"px":""};${imgMaxHeight?"max-height:"+imgMaxHeight+"px":""};position:absolute;filter:opacity(0);}
+            img{${imgMaxWidth ? "max-width:" + imgMaxWidth + "px" : ""};${imgMaxHeight ? "max-height:" + imgMaxHeight + "px" : ""};position:absolute;filter:opacity(0);}
             .show{filter:opacity(1);transition: all ${speed}s;}
             .hide{filter:opacity(0);transition: all ${speed}s;}
         `;
