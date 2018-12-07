@@ -69,14 +69,16 @@ imgs = "http://www.xxx.com/(a,b,c,d,e).jpg|http://www.xxx.com/(0..10).jpg|http:/
     interval="3" 
     speed="1" 
     imgmaxwidth="1000" 
-    imgs="https://cdn.pixabay.com/photo/(
-        2018/10/03/03/42/flower-gerbel-3720383,
-        2018/05/06/17/59/columbine-3379045,
-        2018/09/06/19/53/mushroom-3659165,
-        2018/11/03/22/24/fire-3792951,
-        2018/04/05/23/30/nature-3294543,
-        2017/11/20/20/12/helicopter-2966569,
-        2018/10/30/16/06/water-lily-3784022
-    )_960_720.jpg">
+    imgs="http://(
+          www.dnzhuti.com/uploads/allimg/170411/95-1F411145240,
+          img1.3lian.com/2015/w14/48/d/27,
+          img15.3lian.com/2015/f1/189/d/26,
+          pic1.win4000.com/wallpaper/a/57b2e181edfcf,
+          www.psahz.com/uploads/allimg/170220/0949161948-0,
+          d.5857.com/zmmnb_171018/002
+        ).jpg">
 </img-swith>
 ```
+
+<iframe height='265' scrolling='no' title='图片切换 Web 控件' src='//codepen.io/zk1218/embed/gQVQNy/?height=265&theme-id=0&default-tab=js,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/zk1218/pen/gQVQNy/'>图片切换 Web 控件</a> by zk1218 (<a href='https://codepen.io/zk1218'>@zk1218</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
