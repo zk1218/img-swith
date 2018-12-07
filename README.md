@@ -80,4 +80,4 @@ imgs = "http://www.xxx.com/(a,b,c,d,e).jpg|http://www.xxx.com/(0..10).jpg|http:/
 </img-swith>
 ```
 
-CodePen 在线演示：[https://codepen.io/zk1218/pen/gQVQNy]()
+CodePen 在线演示：[https://codepen.io/zk1218/pen/gQVQNy](https://codepen.io/zk1218/pen/gQVQNy)
