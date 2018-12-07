@@ -80,5 +80,4 @@ imgs = "http://www.xxx.com/(a,b,c,d,e).jpg|http://www.xxx.com/(0..10).jpg|http:/
 </img-swith>
 ```
 
-<iframe height='265' scrolling='no' title='图片切换 Web 控件' src='//codepen.io/zk1218/embed/gQVQNy/?height=265&theme-id=0&default-tab=js,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/zk1218/pen/gQVQNy/'>图片切换 Web 控件</a> by zk1218 (<a href='https://codepen.io/zk1218'>@zk1218</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+CodePen 在线演示：[https://codepen.io/zk1218/pen/gQVQNy]()
