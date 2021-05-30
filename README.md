@@ -69,13 +69,28 @@ imgs = "http://www.xxx.com/(a,b,c,d,e).jpg|http://www.xxx.com/(0..10).jpg|http:/
     interval="3" 
     speed="1" 
     imgmaxwidth="1000" 
-    imgs="http://(
-          www.dnzhuti.com/uploads/allimg/170411/95-1F411145240,
-          img1.3lian.com/2015/w14/48/d/27,
-          img15.3lian.com/2015/f1/189/d/26,
-          pic1.win4000.com/wallpaper/a/57b2e181edfcf,
-          www.psahz.com/uploads/allimg/170220/0949161948-0,
-          d.5857.com/zmmnb_171018/002
+    imgs="https://cn.bing.com/th?id=(
+          OHR.RedAlley_EN-US8215991251_UHD,
+          OHR.CowbirdsEgg_EN-US8103879720_UHD,
+          OHR.ICanHearIt_EN-US7945824197_UHD,
+          OHR.TearDropEclipse_EN-US7861293677_UHD,
+          OHR.TowelDay_EN-US7748070759_UHD,
+          OHR.AarhusInfinite_EN-US7607613784_UHD,
+          OHR.RoseRoom_EN-US7194472524_UHD,
+          OHR.CapeofTossa_EN-US6969132211_UHD,
+          OHR.WhoopingCranes_EN-US5576295451_UHD,
+          OHR.BeeLotus_EN-US7861856689_UHD,
+          OHR.RoanRhododendron_EN-US8777664012_UHD,
+          OHR.PompidouMalaga_EN-US7695811401_UHD,
+          OHR.Alesund_EN-US7597098434_UHD,
+          OHR.Guatape_EN-US7463341939_UHD,
+          OHR.ParanalStars_EN-US4851647464_UHD,
+          OHR.AltaFloresta_EN-US4736416258_UHD,
+          OHR.ShikisaiBiei_EN-US4615475287_UHD,
+          OHR.LimerickDay_EN-US4512689467_UHD,
+          OHR.GrinnellGlacier_EN-US4427090483_UHD,
+          OHR.Hokulea_EN-US8698576653_UHD,
+          OHR.OtterMom_EN-US8059433484_UHD
         ).jpg">
 </img-swith>
 ```
